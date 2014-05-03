@@ -12,6 +12,16 @@ Generate (replace the credentials with your own)
 
   % rails generate journeyapi all 533bda53027894f69b001055 7Ajj5htRY1uzw7b4w23V
 
+Configure
+
+  Journey::JourneyResouce.set_environment :testing
+  Journey::JourneyResource.set_username "533bda53027894f69b001055"
+  Journey::JourneyResource.set_password "7Ajj5htRY1uzw7b4w23V"
+
+Use
+
+  tasks = Journey::Task.all
+
 If you are going to add domain logic to your models, extend the generated types
 This allows you to update your classes when your Journey data model changes
 
