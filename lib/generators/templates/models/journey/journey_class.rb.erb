@@ -2,7 +2,7 @@ module Journey
   class <%= class_name %> < JourneyResource
       schema do
         <% attributes.each do |attribute| %>
-        attribute :<%=attribute['name'] %>, :string %>
+        attribute :<%=attribute['name'] %>, :string
         <% end %>
       end
   end
