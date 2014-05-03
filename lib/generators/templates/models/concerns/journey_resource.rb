@@ -1,3 +1,4 @@
+require 'active_resource'
 class JourneyResource < ActiveResource::Base
 
   def self.set_username(u)
