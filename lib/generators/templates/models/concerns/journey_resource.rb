@@ -22,7 +22,7 @@ class JourneyResource < ActiveResource::Base
   	else
   		raise "environment should be :testing, :staging or :production"
   	end
-    self.site = "https://#{@@environment}.journeyapps.com/api/v1/_datamodel.json"
+    self.site = "https://#{@@environment}.journeyapps.com/api/v1/"
   end
 
   self.format = :json
