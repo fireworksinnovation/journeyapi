@@ -8,7 +8,7 @@ class JourneyapiGenerator < Rails::Generators::NamedBase
     schema['objects'].each do |k, v|
       @object_name = v['name']
       @attributes = v['attributes'].values
-      template "models/journey/journey_class.rb.erb", "app/models/#{file_name}.rb"
+      template "models/journey/journey_class.rb.erb", "app/models/journey/#{file_name}.rb"
     end
   end
 
