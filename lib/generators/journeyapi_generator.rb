@@ -4,7 +4,7 @@ class JourneyapiGenerator < Rails::Generators::NamedBase
   source_root File.expand_path('../templates', __FILE__)
 
   def generate_objects
-    template "models/concerns/journey_resource.rb", "app/models/concerns/journey_resource.rb"
+    template "models/journey/journey_resource.rb", "app/models/journey/journey_resource.rb"
     schema['objects'].each do |k, v|
       @object_name = v['name']
       @attributes = v['attributes'].values

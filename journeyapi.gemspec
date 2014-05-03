@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Carl Kritzinger"]
   s.email       = ["ckritzinger@gmail.com"]
   s.homepage    = "https://github.com/ckritzinger/journeyapi"
-  s.summary     = "Buidl journey API"
-  s.description = "Build journey API."
+  s.summary     = "Build ActiveResource classes for your journey app"
+  s.description = "Build ActiveResource classes for your journey app"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
